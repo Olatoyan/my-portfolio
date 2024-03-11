@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         ibarra: ["Ibarra Real Nova", "serif"],
+        "public-sans": ["Public Sans", "sans-serif"],
       },
     },
   },

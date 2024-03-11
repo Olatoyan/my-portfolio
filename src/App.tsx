@@ -1,9 +1,12 @@
+import { Route, Routes } from "react-router-dom";
+import Homepage from "./components/home/Homepage";
+
 function App() {
   return (
-    <div className="text-2xl">
-      hi
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
