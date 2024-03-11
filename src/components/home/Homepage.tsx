@@ -1,5 +1,6 @@
 import Header from "../../ui/Header";
 import HeroSection from "./HeroSection";
+import ProjectSection from "./ProjectSection";
 import TechStack from "./TechStack";
 
 function Homepage() {
@@ -8,6 +9,7 @@ function Homepage() {
       <Header />
       <HeroSection />
       <TechStack />
+      <ProjectSection />
     </>
   );
 }

@@ -23,7 +23,7 @@ import TechSkills from "./TechSkills";
 
 function TechStack() {
   return (
-    <section className="pt-[20rem] px-32">
+    <section className="pt-80 px-32">
       <h2 className="text-[#42446e] text-[4.8rem] font-bold leading-[2.6rem] pb-20 font-ibarra text-center">
         My Tech Stack
       </h2>
