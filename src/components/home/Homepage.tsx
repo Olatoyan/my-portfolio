@@ -1,4 +1,4 @@
-import Header from "../../ui/Header";
+import Header from "./Header";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import HeroSection from "./HeroSection";

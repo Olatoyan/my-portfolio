@@ -19,7 +19,10 @@ function Contact() {
   }
 
   return (
-    <section className="grid grid-cols-[1.5fr_2fr] gap-20 px-32 py-80">
+    <section
+      id="contact"
+      className="grid grid-cols-[1.5fr_2fr] gap-20 px-32 py-80"
+    >
       <div className="pt-32">
         <h3 className="text-[#42446e] text-[5.2rem] font-bold leading-[4.8rem] pb-4">
           Let’s work together

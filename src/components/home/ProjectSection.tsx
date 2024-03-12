@@ -2,7 +2,7 @@ import ProjectBox from "./ProjectBox";
 
 function ProjectSection() {
   return (
-    <section className="px-32">
+    <section id="project" className="px-32">
       <h2 className="text-[#42446e] text-[4.8rem] font-bold leading-[2.6rem] pb-20 pt-80 font-ibarra text-center">
         Projects
       </h2>
@@ -29,17 +29,17 @@ function ProjectSection() {
         <ProjectBox
           img="./hangman.png"
           title="Hangman game"
-          description="The Hangman Game is a classic word-guessing game where players attempt to guess a word letter by letter. With intuitive gameplay and vibrant graphics, it's an engaging way to challenge your vocabulary skills."
+          description="The Hangman Game offers an entertaining way to test your knowledge across six diverse categories: movies, TV shows, animals, capital cities, countries, and sports. Challenge yourself with word-guessing fun and explore a variety of topics as you uncover hidden phrases and expand your vocabulary. With a total of 8 guesses, test your deduction skills and see if you can guess the phrase before the hangman is complete!"
         />
         <ProjectBox
           img="./connect-four.png"
           title="Connect Four Game"
-          description="Connect Four is a classic strategy game where players take turns dropping colored discs into a grid with the goal of connecting four of their own discs in a row. It's a fun and challenging game suitable for players of all ages."
+          description="Connect Four is a classic strategy game where players take turns dropping colored discs into a grid with the goal of connecting four of their own discs in a row. It's a fun and challenging game suitable for players of all ages. Test your skills against our competitive AI, which strategically plays to win and blocks your moves, providing an engaging challenge for solo play."
         />
         <ProjectBox
           img="./quiz.png"
           title="Quiz App"
-          description="The Quiz Application offers a dynamic platform for creating and taking quizzes on various topics. With features like multiple-choice questions, timers, and score tracking, it provides an interactive and educational experience for users."
+          description="The Quiz Application offers a dynamic platform for creating and taking quizzes on various topics. With features like multiple-choice questions and score tracking, it provides an interactive and educational experience for users. Dive into the world of HTML, CSS, JavaScript, and accessibility as you test your knowledge across these four essential categories."
         />
       </div>
     </section>
