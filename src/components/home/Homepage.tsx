@@ -18,8 +18,8 @@ function Homepage() {
           <ProjectSection />
           <Contact />
         </main>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
