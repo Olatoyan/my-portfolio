@@ -31,10 +31,6 @@ function Header() {
       <AnimatePresence>
         {(isOpen || !isMobile) && (
           <motion.nav
-            // variants={menuVariants}
-            // initial={isMobile ? "closed" : "open"}
-            // animate={isOpen ? "open" : "closed"}
-            // exit={isMobile ? "closed" : "open"}
             initial={{ opacity: isMobile ? 0 : 1, x: isMobile ? "-100%" : 0 }}
             animate={{ opacity: isMobile ? 1 : 1, x: isMobile ? 0 : 0 }}
             exit={{ opacity: isMobile ? 0 : 1, x: isMobile ? "-100%" : 0 }}
@@ -122,19 +118,31 @@ function Header() {
             </ul>
 
             <div className="flex items-center gap-8 ">
-              <Link to="https://github.com/olatoyan" target="_blank">
+              <Link
+                to="https://github.com/olatoyan"
+                target="_blank"
+                aria-label="github"
+              >
                 <FaGithub
                   size={"2.4rem"}
                   className={`${isDarkMode ? "text-white" : "text-black"}`}
                 />
               </Link>
-              <Link to="https://twitter.com/_annonnymouss_" target="_blank">
+              <Link
+                to="https://twitter.com/_annonnymouss_"
+                target="_blank"
+                aria-label="twitter"
+              >
                 <FaXTwitter
                   size={"2.4rem"}
                   className={`${isDarkMode ? "text-white" : "text-black"}`}
                 />
               </Link>
-              <Link to="https://linkedin.com/in/olatoyan" target="_blank">
+              <Link
+                to="https://linkedin.com/in/olatoyan"
+                target="_blank"
+                aria-label="linkedin"
+              >
                 <FaLinkedin
                   size={"2.4rem"}
                   className={`${isDarkMode ? "text-white" : "text-black"}`}
