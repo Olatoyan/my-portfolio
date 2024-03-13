@@ -18,7 +18,7 @@ function Header() {
   };
   return (
     <header
-      className={`flex items-center justify-between px-32 py-12 fixed top-0 left-0 w-full desktop:px-20 z-10 shadow-box-sh backdrop-filter backdrop-blur-lg bg-opacity-60 tablet:px-10 mobile:py-5 ${
+      className={`flex items-center justify-between px-32 py-8 fixed top-0 left-0 w-full desktop:px-20 z-10 shadow-box-sh backdrop-filter backdrop-blur-lg bg-opacity-60 tablet:px-10 mobile:py-5 ${
         isDarkMode ? "bg-[#f5ebeb]" : "bg-white"
       }`}
     >
@@ -34,7 +34,7 @@ function Header() {
             initial={{ opacity: isMobile ? 0 : 1, x: isMobile ? "-100%" : 0 }}
             animate={{ opacity: isMobile ? 1 : 1, x: isMobile ? 0 : 0 }}
             exit={{ opacity: isMobile ? 0 : 1, x: isMobile ? "-100%" : 0 }}
-            className={`flex items-center gap-24 laptop:shadow-box-sh laptop:top-[10rem] laptop:left-0 laptop:py-12 laptop:px-16 laptop:w-full laptop:fixed laptop:flex-col mobile:top-[6rem] laptop:min-h-[100dvh] transition-none duration-0 ${
+            className={`flex items-center gap-24 laptop:shadow-box-sh laptop:top-[8rem] laptop:left-0 laptop:py-12 laptop:px-16 laptop:w-full laptop:fixed laptop:flex-col mobile:top-[6rem] laptop:min-h-[100dvh] transition-none duration-0 ${
               isDarkMode ? "laptop:bg-[#363636]" : "laptop:bg-white"
             }`}
           >
