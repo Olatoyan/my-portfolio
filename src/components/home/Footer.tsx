@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-[#33323d] px-32 flex items-center justify-between py-8">
+    <footer className="bg-[#33323d] px-32 flex items-center justify-between py-8 desktop:px-20 tablet:px-10 tablet:flex-col tablet:gap-12">
       {/* <div className="flex items-center gap-12">
         <img src="./favicon.svg" alt="footer logo" />
         <ul className="flex items-center gap-8">
@@ -27,7 +27,7 @@ function Footer() {
       <p className="text-[1.2rem] tracking-[0.2rem] uppercase text-white">
         &copy; {new Date().getFullYear()} Olatoyan George
       </p>
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-8 mobile:flex-col">
         <p className="text-[1.3rem] text-white">Connect with me:</p>
         <Link
           to="https://github.com/olatoyan"

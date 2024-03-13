@@ -4,10 +4,12 @@ import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 import ProjectSection from "./ProjectSection";
 import TechStack from "./TechStack";
+import { useDarkMode } from "../contexts/DarkModeContext";
 
 function Homepage() {
+  const { isDarkMode } = useDarkMode();
   return (
-    <>
+    <div className={`${isDarkMode ? "bg-[#191919]" : "bg-white"}`}>
       <Header />
       <main>
         <HeroSection />
@@ -16,7 +18,7 @@ function Homepage() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
