@@ -41,7 +41,7 @@ function TechStack() {
           isDarkMode ? "text-[#a7a7a7]" : "text-[#666]"
         }`}
       >
-        Technologies I've been working with recently
+        Technologies I work with
       </h3>
 
       <div className="flex items-center justify-center flex-wrap gap-28 pt-32 desktop:gap-20 laptop:gap-10 tablet:pt-16">

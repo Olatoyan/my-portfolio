@@ -9,7 +9,11 @@ import { useDarkMode } from "../contexts/DarkModeContext";
 function Homepage() {
   const { isDarkMode } = useDarkMode();
   return (
-    <div className={`${isDarkMode ? "bg-[#191919]" : "bg-white"}`}>
+    <div
+      className={`${
+        isDarkMode ? "bg-[#191919]" : "bg-white"
+      } relative max-w-[144rem] mx-auto`}
+    >
       <Header />
       <main>
         <HeroSection />

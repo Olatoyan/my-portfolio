@@ -9,12 +9,14 @@ function ProjectBox({
   description,
   url,
   github,
+  techStack,
 }: {
   img: string;
   title: string;
   description: string;
   url: string;
   github: string;
+  techStack: string;
 }) {
   const { isDarkMode } = useDarkMode();
 
@@ -45,6 +47,13 @@ function ProjectBox({
         }`}
       >
         {description}
+      </p>
+      <p
+        className={`text-[1.6rem] font-light px-10 pb-10 ${
+          isDarkMode ? "text-white" : "text-[#33323d]"
+        }`}
+      >
+        <span className="font-bold"> Tech Stack</span>: {techStack}
       </p>
 
       <div className="flex justify-between mx-10 mt-auto mb-12">
