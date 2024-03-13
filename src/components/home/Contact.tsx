@@ -1,5 +1,8 @@
 import { useForm } from "react-hook-form";
 import { useDarkMode } from "../contexts/DarkModeContext";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 type ContactState = {
   name: string;
@@ -15,8 +18,23 @@ function Contact() {
     formState: { errors },
   } = useForm<ContactState>();
 
-  function onnSubmitData(data: ContactState) {
-    console.log(data);
+  const form = useRef<HTMLFormElement>(null);
+
+  function onSubmitData() {
+    emailjs
+      .sendForm("service_s65f38q", "template_5ekfk9f", form.current!, {
+        publicKey: "VOYoP3DVCGY3cBX16",
+      })
+      .then(
+        () => {
+          toast.success("Your message has been sent");
+          form.current!.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          toast.error("There was an error sending your message.");
+        }
+      );
   }
 
   const { isDarkMode } = useDarkMode();
@@ -41,7 +59,11 @@ function Contact() {
           I’d love to hear about what you’re working on and how I could help.
         </p>
       </div>
-      <form onSubmit={handleSubmit(onnSubmitData)} className="space-y-10">
+      <form
+        onSubmit={handleSubmit(onSubmitData)}
+        ref={form}
+        className="space-y-10"
+      >
         <div>
           <label
             htmlFor="name"
