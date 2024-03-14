@@ -5,7 +5,7 @@ function TechSkills({ children, text }: { children: ReactNode; text: string }) {
   const { isDarkMode } = useDarkMode();
   return (
     <motion.div
-      className="flex items-center flex-col gap-5"
+      className="flex items-center flex-col gap-5 mobile:gap-2"
       initial={{ scale: 1 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}

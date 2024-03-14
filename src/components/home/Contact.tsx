@@ -41,7 +41,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="grid grid-cols-[1.5fr_2fr] gap-20 px-32 desktop:px-20 py-80 tablet:grid-cols-1 tablet:gap-12 tablet:px-10 tablet:py-20"
+      className="grid grid-cols-[1.5fr_2fr] gap-20 px-32 desktop:px-20 py-80 tablet:grid-cols-1 tablet:gap-12 tablet:px-10 tablet:py-[7.5rem]"
     >
       <div className="pt-32 tablet:pt-0">
         <h3

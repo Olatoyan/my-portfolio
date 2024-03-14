@@ -27,7 +27,7 @@ function TechStack() {
   return (
     <section
       id="stack"
-      className="pt-80 laptop:pt-40 px-32 desktop:px-20 tablet:px-10 tablet:pt-20"
+      className="pt-80 laptop:pt-40 px-32 desktop:px-20 tablet:px-10 tablet:pt-[7.5rem]"
     >
       <h2
         className={`text-[4.8rem] laptop:text-[3rem] laptop:leading-[3rem] laptop:pb-4 font-bold leading-[4.8rem] pb-10 font-ibarra text-center ${

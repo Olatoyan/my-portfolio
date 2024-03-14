@@ -6,7 +6,7 @@ function ProjectSection() {
   return (
     <section
       id="project"
-      className="px-32 desktop:px-20 pt-80 laptop:pt-40 tablet:px-10 tablet:pt-20"
+      className="px-32 desktop:px-20 pt-80 laptop:pt-40 tablet:px-10 tablet:pt-[7.5rem]"
     >
       <h2
         className={`text-[4.8rem] font-bold leading-[4.8rem] pb-10 font-ibarra text-center laptop:text-[3rem] laptop:leading-[3rem] laptop:pb-4 ${
