@@ -1,11 +1,4 @@
-import {
-  FaCss3,
-  FaGitAlt,
-  FaHtml5,
-  FaNode,
-  FaReact,
-  FaSass,
-} from "react-icons/fa6";
+import { FaGitAlt, FaNode, FaReact, FaSass } from "react-icons/fa6";
 import {
   SiExpress,
   SiFramer,
@@ -45,18 +38,6 @@ function TechStack() {
       </h3>
 
       <div className="flex items-center justify-center flex-wrap gap-28 pt-32 desktop:gap-20 laptop:gap-10 tablet:pt-16">
-        <TechSkills text="HTML5">
-          <FaHtml5
-            color="#E44F26"
-            className="h-[10rem] desktop:h-[8rem] desktop:w-[8rem] w-[10rem] laptop:w-[4rem] laptop:h-[4rem]"
-          />
-        </TechSkills>
-        <TechSkills text="CSS3">
-          <FaCss3
-            color="#1572B6"
-            className="h-[10rem] desktop:h-[8rem] desktop:w-[8rem] w-[10rem] laptop:w-[4rem] laptop:h-[4rem]"
-          />
-        </TechSkills>
         <TechSkills text="JavaScript">
           <SiJavascript
             color="#F5DE19"
