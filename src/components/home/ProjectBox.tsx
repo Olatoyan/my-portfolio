@@ -68,7 +68,7 @@ function ProjectBox({
         <Link
           to={url}
           target="_blank"
-          className={`flex items-center gap-4 text-[1.6rem] leading-[2.6rem] underline ${
+          className={`flex items-center gap-4 text-[1.6rem] leading-[2.6rem] hover:underline ${
             isDarkMode ? "text-white" : "text-[#33323d]"
           }`}
         >
@@ -78,7 +78,7 @@ function ProjectBox({
         <Link
           to={github}
           target="_blank"
-          className={`flex items-center gap-4 text-[1.6rem] leading-[2.6rem] underline ${
+          className={`flex items-center gap-4 text-[1.6rem] leading-[2.6rem] hover:underline ${
             isDarkMode ? "text-white" : "text-[#33323d]"
           }`}
         >

@@ -60,7 +60,7 @@ function Header() {
             </div>
             <ul className="flex items-center gap-16 laptop:flex-col">
               <li
-                className={`text-[1.2rem] tracking-[0.2rem] uppercase cursor-pointer hover:underline ${
+                className={`text-[1.2rem] tracking-[0.2rem] uppercase cursor-pointer border-b border-transparent hover:border-white transition-all duration-300 ${
                   isDarkMode ? "text-white" : "text-[#33323d]"
                 }`}
               >
@@ -74,7 +74,7 @@ function Header() {
                 </ScrollLink>
               </li>
               <li
-                className={`text-[1.2rem] tracking-[0.2rem] uppercase cursor-pointer hover:underline ${
+                className={`text-[1.2rem] tracking-[0.2rem] uppercase cursor-pointer border-b border-transparent hover:border-white transition-all duration-300 ${
                   isDarkMode ? "text-white" : "text-[#33323d]"
                 }`}
               >
@@ -88,7 +88,7 @@ function Header() {
                 </ScrollLink>
               </li>
               <li
-                className={`text-[1.2rem] tracking-[0.2rem] uppercase cursor-pointer hover:underline ${
+                className={`text-[1.2rem] tracking-[0.2rem] uppercase cursor-pointer border-b border-transparent hover:border-white transition-all duration-300 ${
                   isDarkMode ? "text-white" : "text-[#33323d]"
                 }`}
               >
@@ -102,7 +102,7 @@ function Header() {
                 </ScrollLink>
               </li>
               <li
-                className={`text-[1.2rem] tracking-[0.2rem] uppercase cursor-pointer hover:underline ${
+                className={`text-[1.2rem] tracking-[0.2rem] uppercase cursor-pointer border-b border-transparent hover:border-white transition-all duration-300 ${
                   isDarkMode ? "text-white" : "text-[#33323d]"
                 }`}
               >

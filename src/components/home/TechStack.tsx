@@ -4,6 +4,7 @@ import {
   SiFramer,
   SiJavascript,
   SiMongodb,
+  SiNextdotjs,
   SiReactquery,
   SiRedux,
   SiStyledcomponents,
@@ -38,15 +39,9 @@ function TechStack() {
       </h3>
 
       <div className="flex items-center justify-center flex-wrap gap-28 pt-32 desktop:gap-20 laptop:gap-10 tablet:pt-16">
-        <TechSkills text="JavaScript">
-          <SiJavascript
-            color="#F5DE19"
-            className="h-[10rem] desktop:h-[8rem] desktop:w-[8rem] w-[10rem] laptop:w-[4rem] laptop:h-[4rem]"
-          />
-        </TechSkills>
-        <TechSkills text="TypeScript">
-          <SiTypescript
-            color="#3178c6"
+        <TechSkills text="Next.js">
+          <SiNextdotjs
+            color="#000"
             className="h-[10rem] desktop:h-[8rem] desktop:w-[8rem] w-[10rem] laptop:w-[4rem] laptop:h-[4rem]"
           />
         </TechSkills>
@@ -56,6 +51,19 @@ function TechStack() {
             className="h-[10rem] desktop:h-[8rem] desktop:w-[8rem] w-[10rem] laptop:w-[4rem] laptop:h-[4rem]"
           />
         </TechSkills>
+        <TechSkills text="TypeScript">
+          <SiTypescript
+            color="#3178c6"
+            className="h-[10rem] desktop:h-[8rem] desktop:w-[8rem] w-[10rem] laptop:w-[4rem] laptop:h-[4rem]"
+          />
+        </TechSkills>
+        <TechSkills text="JavaScript">
+          <SiJavascript
+            color="#F5DE19"
+            className="h-[10rem] desktop:h-[8rem] desktop:w-[8rem] w-[10rem] laptop:w-[4rem] laptop:h-[4rem]"
+          />
+        </TechSkills>
+
         <TechSkills text="Redux">
           <SiRedux
             color="#764ABC"
